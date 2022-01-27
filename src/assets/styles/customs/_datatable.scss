@@ -1,0 +1,11 @@
+th {
+    background-color: $color-primary;
+}
+
+tr{ 
+    background-color: $color-accent;
+
+    &:hover{
+        background-color: lighten($color: $color-accent, $amount: 5)  !important;
+    }
+}
