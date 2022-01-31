@@ -1,12 +1,3 @@
 @import 'base/base';
 @import 'customs/custom';
-
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
-body,html {
-    min-height: 100%;
-}
+@import 'animation/animation';

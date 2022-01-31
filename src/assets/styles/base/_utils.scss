@@ -1,0 +1,29 @@
+.section-break{
+    margin: 100px auto;
+    color: $color-white;
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+
+   &::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: $color-gray;
+    left: -150px;
+    top: 50%;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: $color-gray;
+    right: -150px;
+    top: 50%;
+    position: absolute;
+  }
+}

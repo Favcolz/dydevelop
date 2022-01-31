@@ -38,7 +38,9 @@
       </div>
     </v-app-bar>
     <v-main class="px-lg-15 secondary">
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
     </v-main>
   </v-app>
 </template>

@@ -90,7 +90,8 @@
               <v-img
                 :src="coffee.images"
                 alt=""
-                min-height="200"
+                min-height="250"
+                height="250"
                 class="elevation-4 rounded-lg"
               ></v-img>
               <v-card-text class="fill-height">
@@ -132,7 +133,8 @@
               <v-img
                 :src="coffee.images"
                 alt=""
-                min-height="200"
+                min-height="250"
+                height="250"
                 class="elevation-4 rounded-lg"
               ></v-img>
               <v-card-text class="fill-height">

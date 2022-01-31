@@ -1,5 +1,5 @@
 a {
-    color: #eee !important;
+    color: $color-white !important;
     transition: ease .3s;
 
     &.navitem {
@@ -22,6 +22,14 @@ ul {
     }
 }
 
-.text-white{
-    color: $color-white;
+.text{
+
+    &-white{
+
+        color: $color-white;
+    }
+
+    &-gray{
+        color :$color-gray
+    }
 }

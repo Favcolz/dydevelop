@@ -13,6 +13,7 @@ export default new Vuetify({
         news: "#041C32",
         textw: "#eee",
         textb: "#333",
+        pricebg: "#04212E",
       },
       dark: {
         primary: "#031B26", // #E53935
