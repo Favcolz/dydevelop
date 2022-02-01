@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar
-      class="px-lg-15 px-xs-10 px-md-10 elevation-1"
+      class="px-lg-15 px-xs-10 px-md-10 px-sm-15 elevation-1"
       app
       color="primary"
       dark

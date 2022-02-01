@@ -1,7 +1,7 @@
 <template>
   <v-container class="py-lg-5">
-    <v-row>
-      <v-col cols="12" lg="8" md="12" sm="12">
+    <v-row justify="center">
+      <v-col cols="12" lg="8" md="12" sm="10">
         <v-carousel class="rounded-lg">
           <v-carousel-item
             v-for="(item, i) in items"
@@ -12,7 +12,7 @@
           ></v-carousel-item>
         </v-carousel>
       </v-col>
-      <v-col cols="12" lg="4" md="12" sm="12">
+      <v-col cols="12" lg="4" md="12" sm="10">
         <v-card
           v-for="(news, index) in newsList"
           :key="index"
@@ -27,15 +27,13 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col
-        cols="12"
-        class="text-white d-flex justify-space-between align-baseline"
-      >
+    <v-row justify="center">
+      <v-col cols="12" sm="10" lg="12" class="text-white">
         <span class="display-1"> Covid-19</span>
       </v-col>
       <v-col
         cols="12"
+        sm="10"
         lg="3"
         md="6"
         v-for="(covid, index) in covidList"
@@ -69,15 +67,17 @@
         </v-data-table>
       </v-col>
     </v-row> -->
-    <v-row>
+    <v-row justify="center">
       <v-col
         cols="12"
+        sm="10"
+        lg="12"
         class="text-white d-flex justify-space-between align-baseline"
       >
         <span class="display-1"> Coffee</span>
         <router-link to="/coffee">more...</router-link>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" sm="10" lg="12">
         <v-row>
           <v-col
             cols="12"
@@ -112,15 +112,17 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row justify="center">
       <v-col
         cols="12"
+        sm="10"
+        lg="12"
         class="text-white d-flex justify-space-between align-baseline"
       >
         <span class="display-1"> Game</span>
         <router-link to="/game">more...</router-link>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" sm="10" lg="12">
         <v-row nowrap>
           <v-col
             lg="3"

@@ -1,10 +1,7 @@
 <template>
   <v-container class="py-lg-5">
-    <v-row>
-      <v-breadcrumbs large dark :items="items"></v-breadcrumbs>
-    </v-row>
-    <v-row>
-      <v-col lg="5">
+    <v-row justify="center">
+      <v-col sm="10" lg="5">
         <v-img
           min-height="500"
           height="500"
@@ -12,7 +9,7 @@
           src="https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
         ></v-img>
       </v-col>
-      <v-col lg="7" class="d-flex flex-column justify-space-between">
+      <v-col lg="7" sm="10" class="d-flex flex-column justify-space-between">
         <v-card style="position: relative" min-height="500" class="primary">
           <v-card-text>
             <v-row justify="space-between" align="center">
@@ -90,8 +87,8 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col>
+    <v-row justify="center">
+      <v-col cols="10" lg="12">
         <v-card class="rounded-lg" dark>
           <v-tabs
             class="rounded-lg"
@@ -215,8 +212,8 @@
         <span class="section-break"> Other Coffee </span>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col cols="12">
+    <v-row justify="center">
+      <v-col cols="12" sm="10" lg="12">
         <v-row>
           <v-col
             cols="12"

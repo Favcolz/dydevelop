@@ -1,10 +1,7 @@
 <template>
   <v-container class="py-lg-5">
-    <v-row>
-      <v-breadcrumbs large dark :items="items"></v-breadcrumbs>
-    </v-row>
-    <v-row>
-      <v-col lg="5">
+    <v-row justify="center">
+      <v-col lg="5" cols="12" sm="10">
         <v-img
           min-height="500"
           height="500"
@@ -12,14 +9,18 @@
           src="https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
         ></v-img>
       </v-col>
-      <v-col lg="7" class="d-flex flex-column">
-        <v-card style="position: relative" min-height="500" class="primary">
+      <v-col cols="12" lg="7" sm="10" class="d-flex flex-column">
+        <v-card
+          style="position: relative"
+          :min-height="$vuetify.breakpoint.name == 'xs' ? 600 : 500"
+          class="primary"
+        >
           <v-card-text class="d-flex flex-column justify-space-between">
             <v-row justify="space-between" align="center">
-              <v-col lg="8">
+              <v-col lg="8" cols="12">
                 <div><h3 class="text-white">Sleepy Head (250g.)</h3></div>
               </v-col>
-              <v-col lg="4">
+              <v-col lg="4" cols="12">
                 <v-rating
                   v-model="rating"
                   background-color="orange lighten-3"
@@ -28,7 +29,7 @@
                 ></v-rating>
               </v-col>
             </v-row>
-            <v-divider></v-divider>
+            <v-divider class="pt-10"></v-divider>
             <v-row>
               <v-col cols="12">
                 <v-row>
@@ -37,23 +38,18 @@
                   </v-col>
                 </v-row>
                 <v-row class="px-3 text-white">
-                  <v-col cols="3" class="text-end"> Genre </v-col>
-                  <v-col cols="1" class="text-center"> :</v-col>
+                  <v-col cols="4" class="text-end"> Genre </v-col>
                   <v-col cols="8" class="text-start"> Action,Adventure </v-col>
-                  <v-col cols="3" class="text-end"> Developer</v-col>
-                  <v-col cols="1" class="text-center"> :</v-col>
+                  <v-col cols="4" class="text-end"> Developer</v-col>
                   <v-col cols="8" class="text-start">
                     Ubisoft Montreal, Massive Entertainment, and Ubisoft
                     Shanghai</v-col
                   >
-                  <v-col cols="3" class="text-end"> Publisher </v-col>
-                  <v-col cols="1" class="text-center"> :</v-col>
+                  <v-col cols="4" class="text-end"> Publisher </v-col>
                   <v-col cols="8" class="text-start"> Ubisoft </v-col>
-                  <v-col cols="3" class="text-end"> Release Date </v-col>
-                  <v-col cols="1" class="text-center"> :</v-col>
+                  <v-col cols="4" class="text-end"> Release Date </v-col>
                   <v-col cols="8" class="text-start"> 29 Nov, 2012 </v-col>
-                  <v-col cols="3" class="text-end"> Rating for </v-col>
-                  <v-col cols="1" class="text-center"> :</v-col>
+                  <v-col cols="4" class="text-end"> Rating for </v-col>
                   <v-col cols="8" class="text-start"> PEGI </v-col>
                 </v-row>
               </v-col>
@@ -62,7 +58,7 @@
             <v-row
               style="
                 position: absolute;
-                width: 99%;
+                width: 100%;
                 bottom: 0px;
                 padding-bottom: 10px;
               "
@@ -70,11 +66,11 @@
               <v-col cols="12">
                 <v-card dark class="pricebg">
                   <v-card-text>
-                    <v-row justify="space-between" align="center">
-                      <v-col cols="3">
+                    <v-row justify="space-around" align="center">
+                      <v-col cols="6" lg="9">
                         <span class="display-1">฿ 250.-</span>
                       </v-col>
-                      <v-col cols="2">
+                      <v-col cols="6" lg="3">
                         <v-btn block class="primary">
                           Shop
                           <v-icon>mdi-store</v-icon>
@@ -94,8 +90,8 @@
         <span class="section-break"> Coffee Lists </span>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col cols="12">
+    <v-row justify="center">
+      <v-col cols="12" sm="10" lg="12">
         <v-row>
           <v-col
             cols="12"
@@ -138,18 +134,18 @@
 export default {
   data() {
     return {
-      items: [
-        {
-          text: "Coffee",
-          disabled: false,
-          href: "/coffee",
-        },
-        {
-          text: "Sleepy Head",
-          disabled: true,
-          href: "/coffee",
-        },
-      ],
+      // items: [
+      //   {
+      //     text: "Coffee",
+      //     disabled: false,
+      //     href: "/coffee",
+      //   },
+      //   {
+      //     text: "Sleepy Head",
+      //     disabled: true,
+      //     href: "/coffee",
+      //   },
+      // ],
       coffees: [
         {
           name: "Sleepy Head",
